@@ -1,0 +1,28 @@
+---
+---
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+echo = TRUE, 
+fig.align = "center"
+)
+```
+
+
+## Space Movie color palettes
+The colors used in this package were all found using publically available sources, many of them from LucasArts themselves. For example:
+
+- [Rebels](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-padawans-twileks-and-more)
+- [Imperials](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-imperials)
+
+Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
+
+
+### Installation
+```{r install, eval = FALSE}
+devtools::install_github(butterflyology/spaceMovie)
+```
+
+### Usage
+```{r usage, eval = FALSE}
+library("spaceMovie")
+```
