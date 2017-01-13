@@ -1,11 +1,16 @@
 Package: spaceMovie
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A Space Movie color palette generator
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: person("Christopehr", "Hamm", role = c("aut", "cre"),
+    email = "cahamm@ucdavis.edu")
+Maintainer: The package maintainer <cahamm@ucdavis.edu>
+Description: Palettes generated from a Space Movie film franchise
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Suggests:
+    ggplot2
+URL: https://github.com/butterflyology/spaceMovie
+BugReports: https://github.com/butterflyology/spaceMovie/issues
+RoxygenNote: 5.0.1
