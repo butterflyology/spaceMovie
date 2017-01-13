@@ -1,7 +1,6 @@
 ---
 title: "spaceMovie color palette generator"
 author: "Chris Hamm"
-date: "`r format(Sys.Date())`"
 output:  
       html_document:  
         keep_md: TRUE 

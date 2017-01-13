@@ -1,6 +1,5 @@
 # spaceMovie color palette generator
 Chris Hamm  
-`r format(Sys.Date())`  
 
 
 ## Space Movie color palettes
