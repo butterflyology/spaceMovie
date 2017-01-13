@@ -7,7 +7,6 @@ fig.align = "center"
 )
 ```
 
-
 ## Space Movie color palettes
 The colors used in this package were all found using publically available sources, many of them from LucasArts themselves. For example:
 
@@ -19,10 +18,59 @@ Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palett
 
 ### Installation
 ```{r install, eval = FALSE}
-devtools::install_github(butterflyology/spaceMovie)
+devtools::install_github("butterflyology/spaceMovie")
 ```
 
 ### Usage
-```{r usage, eval = FALSE}
+```{r usage}
 library("spaceMovie")
+```
+
+### Chopper
+```{r chopper}
+library("ggplot2")
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
+  theme_bw() +
+  geom_point(size = 3) +
+  scale_color_manual(values = SW_palette("Chopper"))
+```
+
+### Boba
+```{r Boba, fig.height = 1}
+SW_palette("Boba")
+```
+
+### Zeb
+```{r Zeb, fig.height = 1}
+SW_palette("Zeb")
+```
+
+### Sabine
+```{r Sabine, fig.height = 1}
+SW_palette("Sabine")
+```
+
+
+### Main
+```{r Main}
+qplot(factor(cyl), data = mtcars, geom = "bar", fill=factor(vs)) +
+  scale_fill_manual(values = SW_palette("Main"))
+```
+
+### Inquisitor volcano
+```{r Inquisitor}
+SW_colors_1 <- SW_palette("Inquisitor", 21, type = "continuous")
+image(volcano, col = SW_colors_1, las = 1)
+```
+
+### Heat map
+```{r Heat}
+SW_colors_2 <- SW_palette("Hera", 100, type = "continuous")
+
+ggplot(heatmap, aes(x = X2, y = X1, fill = value)) + 
+  geom_tile() + 
+  scale_fill_gradientn(colours = SW_colors_2) + 
+  scale_x_discrete(expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) + 
+  coord_equal() 
 ```
