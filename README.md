@@ -34,7 +34,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   scale_color_manual(values = SW_palette("Chopper"))
 ```
 
-<img src="README_files/figure-html/chopper-1.png" style="display: block; margin: auto;" />
+<img src="figure/chopper-1.png" style="display: block; margin: auto;" />
 
 ### Boba
 
@@ -42,7 +42,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 SW_palette("Boba")
 ```
 
-<img src="README_files/figure-html/Boba-1.png" style="display: block; margin: auto;" />
+<img src="figure/Boba-1.png" style="display: block; margin: auto;" />
 
 ### Zeb
 
@@ -50,7 +50,7 @@ SW_palette("Boba")
 SW_palette("Zeb")
 ```
 
-<img src="README_files/figure-html/Zeb-1.png" style="display: block; margin: auto;" />
+<img src="figure/Zeb-1.png" style="display: block; margin: auto;" />
 
 ### Sabine
 
@@ -58,7 +58,7 @@ SW_palette("Zeb")
 SW_palette("Sabine")
 ```
 
-<img src="README_files/figure-html/Sabine-1.png" style="display: block; margin: auto;" />
+<img src="figure/Sabine-1.png" style="display: block; margin: auto;" />
 
 
 ### Main
@@ -68,7 +68,7 @@ qplot(factor(cyl), data = mtcars, geom = "bar", fill=factor(vs)) +
   scale_fill_manual(values = SW_palette("Main"))
 ```
 
-<img src="README_files/figure-html/Main-1.png" style="display: block; margin: auto;" />
+<img src="figure/Main-1.png" style="display: block; margin: auto;" />
 
 ### Inquisitor volcano
 
@@ -77,7 +77,7 @@ SW_colors_1 <- SW_palette("Inquisitor", 21, type = "continuous")
 image(volcano, col = SW_colors_1, las = 1)
 ```
 
-<img src="README_files/figure-html/Inquisitor-1.png" style="display: block; margin: auto;" />
+<img src="figure/Inquisitor-1.png" style="display: block; margin: auto;" />
 
 ### Heat map
 
@@ -92,4 +92,4 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   coord_equal() 
 ```
 
-<img src="README_files/figure-html/Heat-1.png" style="display: block; margin: auto;" />
+<img src="figure/Heat-1.png" style="display: block; margin: auto;" />
