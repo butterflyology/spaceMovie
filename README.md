@@ -72,14 +72,14 @@ qplot(factor(cyl), data = mtcars, geom = "bar", fill=factor(vs)) +
 
 <img src="figure/Main-1.png" style="display: block; margin: auto;" />
 
-### Inquisitor volcano
+### A Boba Fett volcano!
 
 ```r
-SW_colors_1 <- SW_palette("Inquisitor", 21, type = "continuous")
+SW_colors_1 <- SW_palette("Boba", 21, type = "continuous")
 image(volcano, col = SW_colors_1, las = 1)
 ```
 
-<img src="figure/Inquisitor-1.png" style="display: block; margin: auto;" />
+<img src="figure/Boba_volcano-1.png" style="display: block; margin: auto;" />
 
 ### Heat map
 
