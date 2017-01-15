@@ -2,25 +2,21 @@
 % Please edit documentation in R/colors.R
 \name{SW_palette}
 \alias{SW_palette}
-\title{A Space Movie palette generator}
+\title{A Space Movie palette generator ....}
 \usage{
 SW_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{Name of desired palette. Choices are:
-\code{Boba}, \code{Kanan},  \code{Hera},
-\code{Zeb}, \code{Sabine},  \code{Chopper}, \code{Ezra},
-\code{Inquisitor},  \code{Kallus} , \code{AT_DP} ,
-\code{Tank_Transport_pilot}, \code{Main},}
+\code{Boba}, \code{Kanan}, \code{Hera}, \code{Zeb}, \code{Sabine}, \code{Chopper}, \code{Ezra}, \code{Inquisitor}, \code{Kallus} , \code{AT_DP} , \code{Tank_Transport_pilot}, \code{Main},}
 
 \item{n}{Number of colors desired.
-If omitted, uses all colours.}
+If omitted, uses all colors.}
 
-\item{type}{Either "continuous" or "discrete". Use continuous if you want
-to automatically interpolate between colours.}
+\item{type}{Either "continuous" or "discrete". Use continuous if you want to automatically interpolate between colors.}
 }
 \value{
-A vector of colours.
+A vector of colors.
 }
 \description{
 These are a handful of color palettes from the Space Movie franchise.
@@ -31,9 +27,9 @@ SW_palette("Kanan")
 SW_palette("Hera")
 SW_palette("Sabine", 3)
 
-If you need more colours than normally found in a palette, you
+If you need more colors than normally found in a palette, you
 can use a continuous palette to interpolate between existing
-colours
+colors
 pal <- sw_palette(21, name = "Boba", type = "continuous")
 image(volcano, col = pal)
 }

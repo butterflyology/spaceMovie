@@ -18,20 +18,16 @@ SW_palettes <- list(
   Tank_Transport_pilot = c("#403A60", "#919D9D")
 )
 
-#' A Space Movie palette generator
+#' A Space Movie palette generator ....
 #'
 #' These are a handful of color palettes from the Space Movie franchise.
 #'
 #' @param n Number of colors desired.
-#'   If omitted, uses all colours.
+#'   If omitted, uses all colors.
 #' @param name Name of desired palette. Choices are:
-#'   \code{Boba}, \code{Kanan},  \code{Hera},
-#'   \code{Zeb}, \code{Sabine},  \code{Chopper}, \code{Ezra},
-#'   \code{Inquisitor},  \code{Kallus} , \code{AT_DP} ,
-#'   \code{Tank_Transport_pilot}, \code{Main},
-#' @param type Either "continuous" or "discrete". Use continuous if you want
-#'   to automatically interpolate between colours.
-#' @return A vector of colours.
+#'   \code{Boba}, \code{Kanan}, \code{Hera}, \code{Zeb}, \code{Sabine}, \code{Chopper}, \code{Ezra}, \code{Inquisitor}, \code{Kallus} , \code{AT_DP} , \code{Tank_Transport_pilot}, \code{Main},
+#' @param type Either "continuous" or "discrete". Use continuous if you want to automatically interpolate between colors.
+#' @return A vector of colors.
 #' @export
 #' @keywords colors
 #' @examples
@@ -40,9 +36,9 @@ SW_palettes <- list(
 #' SW_palette("Hera")
 #' SW_palette("Sabine", 3)
 #'
-#' If you need more colours than normally found in a palette, you
+#' If you need more colors than normally found in a palette, you
 #' can use a continuous palette to interpolate between existing
-#' colours
+#' colors
 #' pal <- sw_palette(21, name = "Boba", type = "continuous")
 #' image(volcano, col = pal)
 SW_palette <- function(name, n, type = c("discrete", "continuous")) {
