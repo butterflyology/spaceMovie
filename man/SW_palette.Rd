@@ -7,8 +7,7 @@
 SW_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
-\item{name}{Name of desired palette. Choices are:
-\code{Boba}, \code{Kanan}, \code{Hera}, \code{Zeb}, \code{Sabine}, \code{Chopper}, \code{Ezra}, \code{Inquisitor}, \code{Kallus} , \code{AT_DP} , \code{Tank_Transport_pilot}, \code{Main},}
+\item{name}{Name of desired palette. Choices are: \code{Boba}, \code{Kanan}, \code{Hera}, \code{Zeb}, \code{Sabine}, \code{Chopper}, \code{Ezra}, \code{Inquisitor}, \code{Kallus} , \code{AT_DP} , \code{Tank_Transport_pilot}, \code{Main},}
 
 \item{n}{Number of colors desired.
 If omitted, uses all colors.}
@@ -23,14 +22,14 @@ These are a handful of color palettes from the Space Movie franchise.
 }
 \examples{
 SW_palette("Boba")
-SW_palette("Kanan")
 SW_palette("Hera")
 SW_palette("Sabine", 3)
 
 If you need more colors than normally found in a palette, you
 can use a continuous palette to interpolate between existing
 colors
-pal <- sw_palette(21, name = "Boba", type = "continuous")
+
+pal <- SW_palette(name = "Boba", n = 21, type = "continuous")
 image(volcano, col = pal)
 }
 \keyword{colors}
