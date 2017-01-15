@@ -10,6 +10,7 @@ The colors used in this package were all found using publically available source
 
 Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
 
+#### A brief note about the yellow color in the "Main" list: I don't believe this is the color of yellow used in the main title. I found this color referenced on the internet [here](), but it just looks too dark. 
 
 ### Installation
 
@@ -30,7 +31,9 @@ library("ggplot2")
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   theme_bw() +
   geom_point(size = 3) +
-  scale_color_manual(values = SW_palette("Chopper"))
+  scale_color_manual(values = SW_palette("Chopper")) +
+  labs(y = "Sepal width", x = "Sepal length") +
+  theme(legend.text = element_text(face = "italic"))
 ```
 
 <img src="figure/chopper-1.png" style="display: block; margin: auto;" />
