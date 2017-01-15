@@ -1,11 +1,12 @@
 Package: spaceMovie
 Type: Package
-Title: A Space Movie color palette generator
+Title: A color palette generator based on a film franchise set a long time ago, in a galaxy far far away ....
 Version: 0.1.0
 Authors@R: person("Christopehr", "Hamm", role = c("aut", "cre"),
     email = "cahamm@ucdavis.edu")
 Maintainer: The package maintainer <cahamm@ucdavis.edu>
 Description: Palettes generated from a Space Movie film franchise
+Date: 2016-01-18
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -14,4 +15,3 @@ Suggests:
 URL: https://github.com/butterflyology/spaceMovie
 BugReports: https://github.com/butterflyology/spaceMovie/issues
 RoxygenNote: 5.0.1
-
