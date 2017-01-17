@@ -7,6 +7,7 @@ vignette: >
   %\VignetteIndexEntry{spaceMovie-basics}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  \usepackage[utf8]{inputenc}
 ---
 ```{r load, echo = FALSE}
 library("spaceMovie")
