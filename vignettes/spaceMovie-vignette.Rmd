@@ -1,0 +1,90 @@
+---
+title: "*spaceMovie* basics"
+author: "Chris Hamm"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r load, echo = FALSE}
+library("spaceMovie")
+```
+
+This is a vignette to demonstrate the basics of using the *spaceMovie* package to generate color palettes.
+
+The most basic form requires only that you call the function `SW_palette()` and provide one of the palette names. By default, all colors from that palette will be displayed.
+
+### 'A New Hope'
+```{r ANH, fig.height = 1}
+SW_palette("TESB")
+```
+
+### Zeb from *Rebels*
+```{r Zeb, fig.height = 1}
+SW_palette("Zeb")
+```
+
+You may explicitly state the number of colors you would like.
+
+### Sabine from *Rebels*
+```{r Sabine, fig.height = 1}
+SW_palette("Sabine", n = 3)
+```
+
+
+You can use *spaceMovie* to color code your plots, as with this example using `ggplot2`:
+
+### Chopper
+```{r chopper, fig.width = 5}
+library("ggplot2")
+ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
+  theme_bw() +
+  geom_point(size = 3) +
+  scale_color_manual(values = SW_palette("Chopper")) +
+  labs(y = "Sepal width", x = "Sepal length") +
+  theme(legend.text = element_text(face = "italic"))
+```
+
+Here is a similar plot using base `R`:
+```{r chopper-base, fig.width = 5, fig.height = 4}
+plot(x = iris$Sepal.Length, y = iris$Sepal.Width, pch = 19, col = SW_palette("Chopper")[factor(iris$Species)], cex = 1.25, xlab = "Sepal length", ylab = "Sepal width", las = 1, ylim = c(2, 4.5), xlim = c(4, 8))
+legend("topleft", col = SW_palette("Chopper"), pch = 19, bty = "n", legend = c(expression(paste(italic("setosa"))), c(expression(paste(italic("versicolor")))), c(expression(paste(italic("virginica"))))))
+```
+
+
+The `SW_palette` function also allows you to select `type = "continuous"`, which will fill in `n` number of colors.
+
+### Boba
+```{r Boba, fig.height = 1}
+SW_palette("Boba", n = 21, type = "continuous")
+```
+
+Saving continuous palettes to an object may clean up your code a bit:
+
+### A Boba Fett volcano!
+```{r Boba_volcano, fig.width = 5, fig.height = 4}
+SW_colors_1 <- SW_palette("Boba", 21, type = "continuous")
+image(volcano, col = SW_colors_1, las = 1)
+```
+
+
+
+### Heat map
+```{r Heat, fig.width = 5}
+SW_colors_2 <- SW_palette("Hera", 100, type = "continuous")
+
+ggplot(heatmap, aes(x = X2, y = X1, fill = value)) + 
+  geom_tile() + 
+  scale_fill_gradientn(colours = SW_colors_2) + 
+  scale_x_discrete(expand = c(0, 0)) +
+  scale_y_discrete(expand = c(0, 0)) + 
+  coord_equal() 
+```
+
+
+
+
+
+

@@ -11,7 +11,10 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests:
-    ggplot2
+    ggplot2,
+    knitr,
+    rmarkdown
 URL: https://github.com/butterflyology/spaceMovie
 BugReports: https://github.com/butterflyology/spaceMovie/issues
 RoxygenNote: 5.0.1
+VignetteBuilder: knitr
