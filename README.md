@@ -8,9 +8,13 @@ The colors used in this package were all found using publically available source
 - [Rebels](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-padawans-twileks-and-more)
 - [Imperials](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-imperials)
 
+- Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/)
+
+If you would like to contribute to the package, please submit a PR with **documentation for color provenance**.
+
 Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
 
-#### A brief note about the yellow color in the "Main" list: I don't believe this is the color of yellow used in the main title. I found this color referenced on the internet [here](), but it just looks too dark. 
+#### A brief note about the yellow color in the "Main" list: I don't believe this is the color of yellow used in the main title. I found this color referenced on the internet [here](), but it just looks too dark to me.
 
 ### Installation
 
@@ -38,13 +42,13 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 <img src="figure/chopper-1.png" style="display: block; margin: auto;" />
 
-### Boba
+### ANH
 
 ```r
-SW_palette("Boba")
+SW_palette("TESB")
 ```
 
-<img src="figure/Boba-1.png" style="display: block; margin: auto;" />
+<img src="figure/ANH-1.png" style="display: block; margin: auto;" />
 
 ### Zeb
 
@@ -57,11 +61,18 @@ SW_palette("Zeb")
 ### Sabine
 
 ```r
-SW_palette("Sabine")
+SW_palette("Sabine", n = 3)
 ```
 
 <img src="figure/Sabine-1.png" style="display: block; margin: auto;" />
 
+### Boba
+
+```r
+SW_palette("Boba", n = 21, type = "continuous")
+```
+
+<img src="figure/Boba-1.png" style="display: block; margin: auto;" />
 
 ### Main
 

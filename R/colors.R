@@ -15,7 +15,14 @@ SW_palettes <- list(
   Inquisitor = c("#EF3340", "#3F4444", "#212121"),
   Kallus = c("#081F2C", "#A6A9AA"),
   AT_DP = c("#708573", "#D0D3D4", "#919D9D"),
-  Tank_Transport_pilot = c("#403A60", "#919D9D")
+  Tank_Transport_pilot = c("#403A60", "#919D9D"),
+  ANH = c("#D6C078", "#F1B084", "#9E5960", "#0C5BA0", "#5E9FDD", "#433011", "#FCFEFF", "#C38348"),
+  TESB = c("#CCB361", "#E89F6F", "#72142A", "#A00F19", "#90931C", "#0B1428", "#A9D9FE", "#123C90"),
+  ROTJ = c("#CCB361", "#E89F6F", "#1E5321", "#69A85F", "#459C2C", "#4A2A00", "#A00F19", "#106382"),
+  TPM = c("#D6C078", "#897320", "#AE191D", "#ACBBC2", "#881C1E", "#90CFEA", "#DDDEEE", "#F9A31D"),
+  AOTC = c("#D6C078", "#897320", "#372324", "#6F3A3F", "#E7A944", "#006DB2", "#A9D9FE", "#6B6B56"),
+  ROTS = c("#D6C078", "#897320", "#525252", "#787878", "#9E291C", "#F16B28", "#B7DDF1", "#006DB2"),
+  TFA = c("#CCB361", "#A10000", "#D90008", "#51B6ED", "#41E19A", "#B09971", "#985C18", "#BBAE95")
 )
 
 #' A Space Movie palette generator ....
@@ -24,19 +31,17 @@ SW_palettes <- list(
 #'
 #' @param n Number of colors desired.
 #'   If omitted, uses all colors.
-#' @param name Name of desired palette. Choices are: \code{Boba}, \code{Kanan}, \code{Hera}, \code{Zeb}, \code{Sabine}, \code{Chopper}, \code{Ezra}, \code{Inquisitor}, \code{Kallus} , \code{AT_DP} , \code{Tank_Transport_pilot}, \code{Main},
+#' @param name Name of desired palette. Choices are: \code{ANH}, \code{TESB}, \code{ROTJ}, \code{TPM}, \code{AOTC}, \code{ROTS}, \code{TFA} \code{Boba}, \code{Kanan}, \code{Hera}, \code{Zeb}, \code{Sabine}, \code{Chopper}, \code{Ezra}, \code{Inquisitor}, \code{Kallus} , \code{AT_DP} , \code{Tank_Transport_pilot}, \code{Main},
 #' @param type Either "continuous" or "discrete". Use continuous if you want to automatically interpolate between colors.
 #' @return A vector of colors.
 #' @export
 #' @keywords colors
 #' @examples
-#' SW_palette("Boba")
 #' SW_palette("Hera")
 #' SW_palette("Sabine", 3)
 #'
-#' If you need more colors than normally found in a palette, you
-#' can use a continuous palette to interpolate between existing
-#' colors
+#' If you need more colors than normally found in a palette, you can use a
+#' continuous palette to interpolate between existing colors.
 #'
 #' pal <- SW_palette(name = "Boba", n = 21, type = "continuous")
 #' image(volcano, col = pal)
@@ -52,7 +57,7 @@ SW_palette <- function(name, n, type = c("discrete", "continuous")) {
   }
 
   if (type == "discrete" && n > length(pal)) {
-    stop("Number of requested colors greater than what palette can offer")
+    stop("Number of requested colors is greater than the palette")
   }
 
   out <- switch(type,
@@ -72,10 +77,16 @@ print.palette <- function(x, ...) {
         ylab = "", xaxt = "n", yaxt = "n", bty = "n")
 
   rect(0, 0.9, n + 1, 1.1, col = rgb(1, 1, 1, 0.8), border = NA)
-  text((n + 1) / 2, 1, labels = attr(x, "name"), cex = 1.5, family = "sans")
+  text(((n + 1) / 2), 1, labels = attr(x, "name"), cex = 1.5, family = "sans")
 }
 
 #' heatmap
 #'
 #' A heatmap example
 # "heatmap"
+
+#' @seealso
+#' Have a look at Karthik Ram's `wesanderson`(\url{https://github.com/karthik/wesanderson}) color palette generator.
+#'
+#' @section Warning:
+#' As of v0.1 I do not think that the internet reference I found accurately reflects the color of the Main Title.
