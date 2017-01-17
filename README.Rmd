@@ -1,6 +1,5 @@
 ---
-title: "spaceMovie color palette generator"
-author: "Chris Hamm"
+title: "*spaceMovie* color palette generator"
 output:  
       html_document:  
         keep_md: TRUE 
@@ -13,7 +12,6 @@ fig.path = "figure/"
 )
 ```
 
-## Space Movie color palettes
 The colors used in this package were all found using publically available sources, many of them from LucasArts themselves. For example:
 
 - [Rebels](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-padawans-twileks-and-more)
