@@ -49,6 +49,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 ```
 
 Here is a similar plot using base `R`:
+
 ```{r chopper-base, fig.width = 5, fig.height = 4}
 plot(x = iris$Sepal.Length, y = iris$Sepal.Width, pch = 19, col = SW_palette("Chopper")[factor(iris$Species)], cex = 1.25, xlab = "Sepal length", ylab = "Sepal width", las = 1, ylim = c(2, 4.5), xlim = c(4, 8))
 legend("topleft", col = SW_palette("Chopper"), pch = 19, bty = "n", legend = c(expression(paste(italic("setosa"))), c(expression(paste(italic("versicolor")))), c(expression(paste(italic("virginica"))))))
@@ -70,8 +71,6 @@ SW_colors_1 <- SW_palette("Boba", 21, type = "continuous")
 image(volcano, col = SW_colors_1, las = 1)
 ```
 
-
-
 ### Heat map
 ```{r Heat, fig.width = 5}
 SW_colors_2 <- SW_palette("Hera", 100, type = "continuous")
@@ -83,9 +82,3 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   scale_y_discrete(expand = c(0, 0)) + 
   coord_equal() 
 ```
-
-
-
-
-
-
