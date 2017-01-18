@@ -6,13 +6,17 @@ The colors used in this package were all found using publically available source
 - [Rebels](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-padawans-twileks-and-more)
 - [Imperials](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-imperials)
 
+Other colors gleaned from various sources:
+
 - Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/)
+- Colors for the "Main" list were gleaned from [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp0.)
 
 If you would like to contribute to the package, please submit a PR with **documentation for color provenance**.
 
-Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
+Please cite this package if you use it: [![DOI](https://zenodo.org/badge/78565513.svg)](https://zenodo.org/badge/latestdoi/78565513)
 
-#### A brief note about the yellow color in the "Main" list: I don't believe this is the color of yellow used in the main title. I found this color referenced on the internet [here](), but it just looks too dark to me.
+
+Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
 
 ### Installation
 
@@ -26,7 +30,7 @@ devtools::install_github("butterflyology/spaceMovie")
 library("spaceMovie")
 ```
 
-### Chopper
+#### Scatterplot with the "Chopper" palette
 
 ```r
 library("ggplot2")
@@ -40,7 +44,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 <img src="figure/chopper-1.png" style="display: block; margin: auto;" />
 
-### ANH
+#### The Empire Strikes Back
 
 ```r
 SW_palette("TESB")
@@ -48,7 +52,7 @@ SW_palette("TESB")
 
 <img src="figure/ANH-1.png" style="display: block; margin: auto;" />
 
-### Zeb
+#### "Zeb"
 
 ```r
 SW_palette("Zeb")
@@ -56,7 +60,7 @@ SW_palette("Zeb")
 
 <img src="figure/Zeb-1.png" style="display: block; margin: auto;" />
 
-### Sabine
+#### "Sabine"
 
 ```r
 SW_palette("Sabine", n = 3)
@@ -64,7 +68,7 @@ SW_palette("Sabine", n = 3)
 
 <img src="figure/Sabine-1.png" style="display: block; margin: auto;" />
 
-### Boba
+#### "Boba"
 
 ```r
 SW_palette("Boba", n = 21, type = "continuous")
@@ -72,7 +76,7 @@ SW_palette("Boba", n = 21, type = "continuous")
 
 <img src="figure/Boba-1.png" style="display: block; margin: auto;" />
 
-### Main
+#### Stacked barplot using "Main"
 
 ```r
 qplot(factor(cyl), data = mtcars, geom = "bar", fill=factor(vs)) +
@@ -81,7 +85,7 @@ qplot(factor(cyl), data = mtcars, geom = "bar", fill=factor(vs)) +
 
 <img src="figure/Main-1.png" style="display: block; margin: auto;" />
 
-### A Boba Fett volcano!
+#### A Boba Fett volcano!
 
 ```r
 SW_colors_1 <- SW_palette("Boba", 21, type = "continuous")
@@ -90,7 +94,7 @@ image(volcano, col = SW_colors_1, las = 1)
 
 <img src="figure/Boba_volcano-1.png" style="display: block; margin: auto;" />
 
-### Heat map
+#### Heat map
 
 ```r
 SW_colors_2 <- SW_palette("Hera", 100, type = "continuous")
