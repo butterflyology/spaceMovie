@@ -51,17 +51,17 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 ```
 
 #### The Phantom Menace
-```{r ANH, fig.height = 1}
+```{r TPM, fig.height = 1}
 SW_palette("TPM")
 ```
 
 #### Attack of the Clones
-```{r ANH, fig.height = 1}
+```{r AOTC, fig.height = 1}
 SW_palette("AOTC")
 ```
 
 #### The Return of the Sith
-```{r ANH, fig.height = 1}
+```{r ROTS, fig.height = 1}
 SW_palette("ROTS")
 ```
 
@@ -70,18 +70,24 @@ SW_palette("ROTS")
 SW_palette("ANH")
 ```
 
+#### Rogue One
+```{r RGO, fig.height = 1}
+SW_palette("RGO")
+```
+
+
 #### The Empire Strikes Back
-```{r ANH, fig.height = 1}
+```{r TESB, fig.height = 1}
 SW_palette("TESB")
 ```
 
 #### Return of the Jedi
-```{r ANH, fig.height = 1}
+```{r ROTJ, fig.height = 1}
 SW_palette("ROTJ")
 ```
 
 #### The Force Awakens
-```{r ANH, fig.height = 1}
+```{r TFA, fig.height = 1}
 SW_palette("TFA")
 ```
 
