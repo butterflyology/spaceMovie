@@ -9,13 +9,13 @@ The colors used in this package were all found using publically available source
 Other colors gleaned from various sources:
 
 - Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/)
-- Colors for the "Main" list were gleaned from [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp0.)
+- Colors for the "Main" list were based on [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp0.)
 
 If you would like to contribute to the package, please submit a PR with **documentation for color provenance**.
 
 Please cite this package if you use it: [![DOI](https://zenodo.org/badge/78565513.svg)](https://zenodo.org/badge/latestdoi/78565513)
 
-Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
+spaceMovie was inspired by and based on Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette.
 
 ### Installation
 
@@ -43,13 +43,29 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 <img src="figure/chopper-1.png" style="display: block; margin: auto;" />
 
-#### The Empire Strikes Back
+#### A New Hope
 
 ```r
-SW_palette("TESB")
+SW_palette("ANH")
 ```
 
 <img src="figure/ANH-1.png" style="display: block; margin: auto;" />
+
+#### Rogue One
+
+```r
+SW_palette("RO")
+```
+
+<img src="figure/RO-1.png" style="display: block; margin: auto;" />
+
+#### The Force Awakens
+
+```r
+SW_palette("TFA")
+```
+
+<img src="figure/TFA-1.png" style="display: block; margin: auto;" />
 
 #### "Zeb"
 
