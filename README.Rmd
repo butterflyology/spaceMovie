@@ -21,7 +21,6 @@ Other colors gleaned from various sources:
 
 - Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/)
 - Colors for the "Main" list were based on [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp0.)
-- Colors for spaceMovies were based on reference images.
 
 If you would like to contribute to the package, please submit a PR with **documentation for color provenance**.
 
@@ -50,40 +49,14 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   theme(legend.text = element_text(face = "italic"))
 ```
 
-#### The Phantom Menace
-```{r TPM, fig.height = 1}
-SW_palette("TPM")
-```
-
-#### Attack of the Clones
-```{r AOTC, fig.height = 1}
-SW_palette("AOTC")
-```
-
-#### The Return of the Sith
-```{r ROTS, fig.height = 1}
-SW_palette("ROTS")
-```
-
 #### A New Hope
 ```{r ANH, fig.height = 1}
 SW_palette("ANH")
 ```
 
 #### Rogue One
-```{r RGO, fig.height = 1}
-SW_palette("RGO")
-```
-
-
-#### The Empire Strikes Back
-```{r TESB, fig.height = 1}
-SW_palette("TESB")
-```
-
-#### Return of the Jedi
-```{r ROTJ, fig.height = 1}
-SW_palette("ROTJ")
+```{r RO, fig.height = 1}
+SW_palette("RO")
 ```
 
 #### The Force Awakens

@@ -10,7 +10,6 @@ Other colors gleaned from various sources:
 
 - Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/)
 - Colors for the "Main" list were based on [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp0.)
-- Colors for spaceMovies were based on reference images.
 
 If you would like to contribute to the package, please submit a PR with **documentation for color provenance**.
 
@@ -34,13 +33,6 @@ library("spaceMovie")
 
 ```r
 library("ggplot2")
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.3.2
-```
-
-```r
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   theme_bw() +
   geom_point(size = 3) +
@@ -50,30 +42,6 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 ```
 
 <img src="figure/chopper-1.png" style="display: block; margin: auto;" />
-
-#### The Phantom Menace
-
-```r
-SW_palette("TPM")
-```
-
-<img src="figure/TPM-1.png" style="display: block; margin: auto;" />
-
-#### Attack of the Clones
-
-```r
-SW_palette("AOTC")
-```
-
-<img src="figure/AOTC-1.png" style="display: block; margin: auto;" />
-
-#### The Return of the Sith
-
-```r
-SW_palette("ROTS")
-```
-
-<img src="figure/ROTS-1.png" style="display: block; margin: auto;" />
 
 #### A New Hope
 
@@ -86,27 +54,10 @@ SW_palette("ANH")
 #### Rogue One
 
 ```r
-SW_palette("RGO")
+SW_palette("RO")
 ```
 
-<img src="figure/RGO-1.png" style="display: block; margin: auto;" />
-
-
-#### The Empire Strikes Back
-
-```r
-SW_palette("TESB")
-```
-
-<img src="figure/TESB-1.png" style="display: block; margin: auto;" />
-
-#### Return of the Jedi
-
-```r
-SW_palette("ROTJ")
-```
-
-<img src="figure/ROTJ-1.png" style="display: block; margin: auto;" />
+<img src="figure/RO-1.png" style="display: block; margin: auto;" />
 
 #### The Force Awakens
 
