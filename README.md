@@ -15,7 +15,7 @@ If you would like to contribute to the package, please submit a PR with **docume
 
 Please cite this package if you use it: [![DOI](https://zenodo.org/badge/78565513.svg)](https://zenodo.org/badge/latestdoi/78565513)
 
-Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
+Inspired by Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette.
 
 ### Installation
 
@@ -27,6 +27,17 @@ devtools::install_github("butterflyology/spaceMovie")
 
 ```r
 library("spaceMovie")
+```
+
+```
+## 
+## Attaching package: 'spaceMovie'
+```
+
+```
+## The following objects are masked _by_ '.GlobalEnv':
+## 
+##     SW_palette, SW_palettes
 ```
 
 #### Scatterplot with the "Chopper" palette
@@ -43,10 +54,10 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 
 <img src="figure/chopper-1.png" style="display: block; margin: auto;" />
 
-#### The Empire Strikes Back
+#### A New Hope
 
 ```r
-SW_palette("TESB")
+SW_palette("ANH")
 ```
 
 <img src="figure/ANH-1.png" style="display: block; margin: auto;" />
