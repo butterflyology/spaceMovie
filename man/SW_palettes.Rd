@@ -12,4 +12,3 @@ SW_palettes
 Use \code{\link{SW_palette}} to construct palettes of desired length.
 }
 \keyword{datasets}
-

@@ -11,4 +11,3 @@ list of palettes from the Space Movie franchise
 \details{
 list of palettes from the Space Movie franchise
 }
-
