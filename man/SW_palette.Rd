@@ -31,4 +31,3 @@ pal <- SW_palette(name = "Boba", n = 21, type = "continuous")
 image(volcano, col = pal)
 }
 \keyword{colors}
-
