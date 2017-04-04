@@ -11,11 +11,7 @@ The colors used in this package were all found using publically available source
 
 Other colors gleaned from various sources:
 
-<<<<<<< HEAD
 - Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/) and [Anthony Caravaggi](http://www.arcaravaggi.co.uk)
-=======
-- Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/) via [@thonoir](http://www.arcaravaggi.co.uk/)
->>>>>>> dev
 - Colors for the "Main" list were gleaned from [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp)
 
 If you would like to contribute to the package, please submit a PR with **documentation for color provenance**.
