@@ -1,6 +1,9 @@
 # *spaceMovie* color palette generator
 
 
+Please cite this package if you use it: 
+[![DOI](https://zenodo.org/badge/78565513.svg)](https://zenodo.org/badge/latestdoi/78565513)
+
 The colors used in this package were all found using publically available sources, many of them from LucasArts themselves. For example:
 
 - [Rebels](http://www.starwars.com/news/star-wars-rebels-costume-color-guide-for-padawans-twileks-and-more)
@@ -8,12 +11,10 @@ The colors used in this package were all found using publically available source
 
 Other colors gleaned from various sources:
 
-- Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/)
-- Colors for the "Main" list were gleaned from [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp0.)
+- Colors from Episodes 1-7 were gleaned from [Baptiste](http://www.fubiz.net/en/2015/04/20/the-colors-of-star-wars-palettes/) via [@thonoir](http://www.arcaravaggi.co.uk/)
+- Colors for the "Main" list were gleaned from [theforce.net](http://www.theforce.net/fanfilms/postproduction/crawl/opening.asp)
 
 If you would like to contribute to the package, please submit a PR with **documentation for color provenance**.
-
-Please cite this package if you use it: [![DOI](https://zenodo.org/badge/78565513.svg)](https://zenodo.org/badge/latestdoi/78565513)
 
 Kartik Ram's [Wes Anderson](https://github.com/karthik/wesanderson) color palette inspired me to create this package and I followed his implementation for consistency.
 
