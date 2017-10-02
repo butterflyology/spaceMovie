@@ -8,7 +8,8 @@ Authors@R: c(person("Christopehr", "Hamm", role = c("aut", "cre"),
 	email = "arcaravaggi@gmail.com" ))
 Maintainer: The package maintainer <cahamm@ucdavis.edu>
 Description: Palettes generated from a Space Movie film franchise
-Date: 2017-04-04
+Date: 2017-10-02
+Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
