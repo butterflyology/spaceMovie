@@ -82,7 +82,8 @@ print.palette <- function(x, ...) {
 #' heatmap
 #'
 #' A heatmap example
-# "heatmap"
+#' "heatmap"
+
 
 #' @seealso
 #' Have a look at Karthik Ram's `wesanderson`(\url{https://github.com/karthik/wesanderson}) color palette generator.
