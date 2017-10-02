@@ -1,8 +1,7 @@
 language: r
 cache: packages
+warnings_are_errors: false
 notifications:
 email:
-    recipients:
-      - cahamm@ucdavis.edu
     on_success: always # default: change
     on_failure: never # default: always
