@@ -40,8 +40,7 @@ SW_palettes <- list(
 #' SW_palette("Hera")
 #' SW_palette("Sabine", 3)
 #'
-#' If you need more colors than normally found in a palette, you can use a
-#' continuous palette to interpolate between existing colors.
+#' If you need more colors than normally found in a palette, you can use a continuous palette to interpolate between existing colors.
 #'
 #' pal <- SW_palette(name = "Boba", n = 21, type = "continuous")
 #' image(volcano, col = pal)
