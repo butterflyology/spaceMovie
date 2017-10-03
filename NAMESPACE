@@ -3,3 +3,5 @@
 S3method(print,palette)
 export(SW_palette)
 export(SW_palettes)
+importFrom("grDevices", "colorRampPalette", "rgb")
+importFrom("graphics", "image", "par", "rect", "text")
