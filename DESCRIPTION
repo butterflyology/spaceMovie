@@ -16,8 +16,7 @@ LazyData: true
 Suggests:
     ggplot2,
     knitr,
-    rmarkdown,
-    heatmap
+    rmarkdown
 URL: https://github.com/butterflyology/spaceMovie
 BugReports: https://github.com/butterflyology/spaceMovie/issues
 RoxygenNote: 6.0.1
