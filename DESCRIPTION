@@ -3,7 +3,8 @@ Type: Package
 Title: A color palette generator based on a film franchise set a long time ago, in a galaxy far far away ....
 Version: 0.0.0.9000
 Authors@R: c(person("Christopehr", "Hamm", role = c("aut", "cre"), 
-	email = "cahamm@ucdavis.edu"), 
+	email = "cahamm@ucdavis.edu",
+	comment = c(ORCID = "0000-0002-1273-9617")), 
 	person("Caravaggi", "Anthony", role = "ctb",
 	email = "arcaravaggi@gmail.com" ))
 Maintainer: The package maintainer <cahamm@ucdavis.edu>
